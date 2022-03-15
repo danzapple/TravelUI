@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: _currentTab,
         onTap: (int value) {
           setState(() {
-            _currentTab = value; 
+            _currentTab = value;
           });
         },
         items: [
@@ -93,21 +93,21 @@ class _HomeScreenState extends State<HomeScreen> {
               Icons.search,
               size: 30.0,
             ),
-            title: SizedBox.shrink(),
+            activeIcon: SizedBox.shrink(),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.local_pizza,
               size: 30.0,
             ),
-            title: SizedBox.shrink(),
+            activeIcon: SizedBox.shrink(),
           ),
           BottomNavigationBarItem(
             icon: CircleAvatar(
               radius: 15.0,
               backgroundImage: NetworkImage('http://i.imgur.com/zL4Krbz.jpg'),
             ),
-            title: SizedBox.shrink(),
+            activeIcon: SizedBox.shrink(),
           )
         ],
       ),
